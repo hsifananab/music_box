@@ -132,26 +132,44 @@ a {
 }
 
 @media (max-width: 960px) {
-  .header .container .header__inner .header__menu .header__list {
+  .header {
+    font-size: 14px;
+  }
+  .header .container .header__inner {
     display: flex;
     flex-wrap: wrap;
   }
+  .header .container .header__inner .header__nav {
+    flex-wrap: wrap;
+  }
+  .header .container .header__inner .header__search {
+    width: 100%;
+  }
+  .header .container .header__inner .header__menu .header__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 18px 0;
+  }
+  .header .container .header__inner .header__menu li {
+    width: 100%;
+  }
 }
-.banner {
+#page-description.banner {
   padding: 200px 0;
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 }
-.banner .container .banner__inner {
+#page-description.banner .container .banner__inner {
   margin: 0 auto;
   color: #ffffff;
 }
-.banner .container .banner__inner .banner__text {
+#page-description.banner .container .banner__inner .banner__text {
   margin-top: 30px;
   margin-bottom: 17px;
 }
-.banner .container .banner__inner .banner__form {
+#page-description.banner .container .banner__inner .banner__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -159,7 +177,7 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-.banner .container .banner__inner .banner__input {
+#page-description.banner .container .banner__inner .banner__input {
   display: block;
   min-width: 270px;
   min-height: 50px;
@@ -171,11 +189,11 @@ a {
   color: #ffffff;
   font-weight: bold;
 }
-.banner .container .banner__inner .banner__input::placeholder {
+#page-description.banner .container .banner__inner .banner__input::placeholder {
   color: #ffffff;
   font-weight: bold;
 }
-.banner .container .banner__inner .banner__button {
+#page-description.banner .container .banner__inner .banner__button {
   width: 100%;
   padding: 20px 30px;
   text-transform: uppercase;
@@ -184,6 +202,26 @@ a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  #page-description.banner {
+    padding-top: 250px;
+  }
+  #page-description.banner .container .banner__inner .banner__title {
+    line-height: 45px;
+  }
+  #page-description.banner .container .banner__inner .banner__subtitle {
+    line-height: 27px;
+  }
+  #page-description.banner .container .banner__inner .banner__text {
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  #page-description.banner .container .banner__inner .banner__input {
+    width: 100%;
+    margin-bottom: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

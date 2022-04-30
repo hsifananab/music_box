@@ -1,20 +1,13 @@
-.banner {
+#page-description.banner {
   padding: 200px 0;
 
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
-  // margin: 0 auto;
   .container {
     .banner__inner {
-      // text-align: center;
       margin: 0 auto;
-
       color: $white;
-      // .banner__title {
-      // }
-      // .banner__subtitle {
-      // }
       .banner__text {
         margin-top: 30px;
         margin-bottom: 17px;
@@ -30,7 +23,6 @@
       }
       .banner__input {
         display: block;
-        // width: 100%;
         min-width: 270px;
         min-height: 50px;
         padding-left: 20px;
@@ -56,6 +48,30 @@
         border-radius: 5px;
 
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #page-description.banner {
+    padding-top: 250px;
+    .container {
+      .banner__inner {
+        .banner__title {
+          line-height: 45px;
+        }
+        .banner__subtitle {
+          line-height: 27px;
+        }
+        .banner__text {
+          margin: 16px 0;
+          font-size: 16px;
+        }
+        .banner__input {
+          width: 100%;
+          margin-bottom: 24px;
+        }
       }
     }
   }

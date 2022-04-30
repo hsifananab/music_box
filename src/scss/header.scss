@@ -79,38 +79,26 @@
 
 @media (max-width: 960px) {
   .header {
+    font-size: 14px;
     .container {
       .header__inner {
+        display: flex;
+        flex-wrap: wrap;
         .header__nav {
+          flex-wrap: wrap;
         }
         .header__search {
-        }
-        .header__logo {
-          .logo {
-            &__image {
-            }
-            &:hover {
-            }
-            &:active {
-            }
-            &:focus {
-            }
-          }
+          width: 100%;
         }
         .header__menu {
           .header__list {
             display: flex;
             flex-wrap: wrap;
+            text-align: left;
+            padding: 18px 0;
           }
           li {
-            .menu__link {
-              &:hover {
-              }
-              &:active {
-              }
-              &:focus {
-              }
-            }
+            width: 100%;
           }
         }
       }
