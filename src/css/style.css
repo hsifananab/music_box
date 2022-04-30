@@ -296,5 +296,84 @@ a {
     margin-bottom: 50px;
   }
 }
+#page-news.news {
+  padding-top: 100px;
+}
+#page-news.news .container .news__inner .news__title {
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+#page-news.news .container .news__inner .news__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 65px;
+}
+#page-news.news .container .news__inner .news__item:last-child {
+  margin-bottom: 0;
+}
+#page-news.news .container .news__inner .news__item.reversed {
+  flex-direction: row-reverse;
+}
+#page-news.news .container .news__inner .news__column {
+  width: 100%;
+}
+#page-news.news .container .news__inner .news__column .news__image {
+  width: 100%;
+}
+#page-news.news .container .news__inner .news__column .news__content {
+  text-align: left;
+}
+#page-news.news .container .news__inner .news__column .content__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #ffffff;
+}
+#page-news.news .container .news__inner .news__column .content__text {
+  margin-bottom: 24px;
+  font-weight: normal;
+  color: #cacaca;
+}
+#page-news.news .container .news__inner .news__column .content__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#page-news.news .container .news__inner .news__column .content__author .author__avatar {
+  margin-right: 16px;
+}
+#page-news.news .container .news__inner .news__column .content__author .author__profile {
+  margin-right: 16px;
+  color: #f89202;
+  text-transform: uppercase;
+}
+#page-news.news .container .news__inner .news__column .content__author .author__profile:hover {
+  text-decoration: underline;
+}
+#page-news.news .container .news__inner .news__column .content__author .author__date {
+  color: #cacaca;
+}
+#page-news.news .container .news__inner .news__column .btn.content__button {
+  max-width: 135px;
+}
+
+@media (max-width: 960px) {
+  #page-news.news .container .news__inner .news__item {
+    flex-wrap: wrap;
+  }
+  #page-news.news .container .news__inner .news__column .content__title {
+    font-size: 16px;
+  }
+  #page-news.news .container .news__inner .news__column .content__text {
+    font-size: 16px;
+  }
+  #page-news.news .container .news__inner .news__column .content__author {
+    font-size: 12.8px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
