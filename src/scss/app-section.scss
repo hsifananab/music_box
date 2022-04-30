@@ -1,0 +1,48 @@
+#page-app.app {
+  padding-top: 100px;
+  .container {
+    margin-bottom: 100px;
+    .app__title {
+      margin-bottom: 50px;
+    }
+    .app__inner {
+      display: flex;
+      justify-content: space-between;
+      .app__column {
+        width: 50%;
+        text-align: left;
+
+        &:last-child {
+          text-align: center;
+        }
+      }
+      .app__content {
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .btn.app__button {
+        width: unset;
+        text-transform: none;
+        font-size: 12.8px;
+        border: none;
+        border-radius: 32px;
+        padding: 16px 40px;
+
+        background-color: $red;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #page-app.app {
+    .container {
+      .app__inner {
+        flex-direction: column-reverse;
+        .app__column {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

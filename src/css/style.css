@@ -25,6 +25,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 h1 {
@@ -301,7 +302,6 @@ a {
 }
 #page-news.news .container .news__inner .news__title {
   margin-bottom: 50px;
-  color: #ffffff;
 }
 #page-news.news .container .news__inner .news__item {
   display: flex;
@@ -330,7 +330,6 @@ a {
   font-weight: normal;
   text-transform: none;
   line-height: 1;
-  color: #ffffff;
 }
 #page-news.news .container .news__inner .news__column .content__text {
   margin-bottom: 24px;
@@ -373,6 +372,48 @@ a {
   }
   #page-news.news .container .news__inner .news__column .content__author {
     font-size: 12.8px;
+  }
+}
+#page-app.app {
+  padding-top: 100px;
+}
+#page-app.app .container {
+  margin-bottom: 100px;
+}
+#page-app.app .container .app__title {
+  margin-bottom: 50px;
+}
+#page-app.app .container .app__inner {
+  display: flex;
+  justify-content: space-between;
+}
+#page-app.app .container .app__inner .app__column {
+  width: 50%;
+  text-align: left;
+}
+#page-app.app .container .app__inner .app__column:last-child {
+  text-align: center;
+}
+#page-app.app .container .app__inner .app__content {
+  text-align: left;
+  margin-bottom: 16px;
+}
+#page-app.app .container .app__inner .btn.app__button {
+  width: unset;
+  text-transform: none;
+  font-size: 12.8px;
+  border: none;
+  border-radius: 32px;
+  padding: 16px 40px;
+  background-color: #95390c;
+}
+
+@media (max-width: 960px) {
+  #page-app.app .container .app__inner {
+    flex-direction: column-reverse;
+  }
+  #page-app.app .container .app__inner .app__column {
+    width: 100%;
   }
 }
 

@@ -30,7 +30,6 @@
 
         &::placeholder {
           text-transform: uppercase;
-          // padding-left: 10px;
         }
       }
       .header__logo {
@@ -50,8 +49,6 @@
           &:active {
             color: $white;
           }
-          // &:focus {
-          // }
         }
       }
       .header__menu {
@@ -68,8 +65,6 @@
             &:active {
               color: $white;
             }
-            // &:focus {
-            // }
           }
         }
       }
