@@ -24,7 +24,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -50,6 +49,18 @@ a {
   max-width: 1260px;
   margin: 0 auto;
   text-align: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -194,14 +205,9 @@ a {
   font-weight: bold;
 }
 #page-description.banner .container .banner__inner .banner__button {
-  width: 100%;
-  padding: 20px 30px;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #34c176;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -221,6 +227,73 @@ a {
   #page-description.banner .container .banner__inner .banner__input {
     width: 100%;
     margin-bottom: 24px;
+  }
+}
+#page-pricing.pricing {
+  padding-top: 100px;
+  color: #ffffff;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__cards {
+  margin: 45px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item {
+  border-radius: 1rem;
+  padding: 24px;
+  margin-right: 50px;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item:last-child {
+  margin-right: 0;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item .card__title {
+  font-weight: normal;
+  margin-bottom: 200px;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item .card__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 32px;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item .card__price .num {
+  font-size: 64px;
+  margin-right: 16px;
+  line-height: 1em;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item .card__button {
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item .card__text {
+  font-size: 12.8px;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item.bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item.bg-standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+#page-pricing.pricing .container .pricing__inner .pricing__item.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #page-pricing.pricing .container .pricing__inner .pricing__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page-pricing.pricing .container .pricing__inner .pricing__item {
+    margin-right: 0;
+    margin-bottom: 50px;
   }
 }
 

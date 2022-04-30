@@ -1,0 +1,82 @@
+#page-pricing.pricing {
+  padding-top: 100px;
+  color: $white;
+  .container {
+    .pricing__inner {
+      .pricing__cards {
+        margin: 45px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+      }
+      .pricing__item {
+        border-radius: 1rem;
+        padding: 24px;
+        margin-right: 50px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        .card__title {
+          font-weight: normal;
+          margin-bottom: 200px;
+        }
+        .card__price {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          font-size: 32px;
+          .num {
+            font-size: 64px;
+            margin-right: 16px;
+            line-height: 1em;
+          }
+        }
+        .card__button {
+          margin-top: 40px;
+          margin-bottom: 64px;
+        }
+        .card__text {
+          font-size: 12.8px;
+        }
+
+        &.bg-free {
+          background-image: url('../images/subscribe_1.png');
+          background-position: center;
+          background-size: cover;
+        }
+
+        &.bg-standart {
+          background-image: url('../images/subscribe_2.png');
+          background-position: center;
+          background-size: cover;
+        }
+
+        &.bg-premium {
+          background-image: url('../images/subscribe_3.png');
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #page-pricing.pricing {
+    .container {
+      .pricing__inner {
+        .pricing__cards {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .pricing__item {
+          margin-right: 0;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
