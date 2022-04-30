@@ -16,6 +16,9 @@ body {
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
+
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -43,7 +46,7 @@ ul {
 }
 
 a {
-  color: $darkGrey;
+  color: $darkGray;
 }
 
 .container {
