@@ -599,5 +599,37 @@ a {
     width: 100%;
   }
 }
+#page-discography.discography {
+  margin-top: 100px;
+}
+#page-discography.discography .container .discography__title {
+  text-align-last: left;
+  margin-bottom: 48px;
+}
+#page-discography.discography .container .discography__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+#page-discography.discography .container .discography__inner .discography__item {
+  text-align: left;
+}
+#page-discography.discography .container .discography__inner .item__cover {
+  margin-bottom: 18px;
+}
+#page-discography.discography .container .discography__inner .item__title {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  #page-discography.discography .container .discography__inner .item__cover {
+    width: 137px;
+    height: 137px;
+  }
+  #page-discography.discography .container .discography__inner .item__title {
+    max-width: 138px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
