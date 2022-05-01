@@ -589,9 +589,8 @@ a {
   align-items: flex-start;
 }
 #page-popular-track.popular .container .popular__inner .track__info .track__title {
-  text-transform: uppercase;
   font-weight: bold;
-  color: #ffffff;
+  line-height: 19.2px;
 }
 
 @media (max-width: 960px) {
