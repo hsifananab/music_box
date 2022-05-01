@@ -488,5 +488,68 @@ a {
     padding-bottom: 0;
   }
 }
+.intro {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 223px;
+}
+.intro .container .intro__inner {
+  text-align-last: left;
+}
+.intro .container .intro__inner .intro__title {
+  padding-top: 250px;
+}
+.intro .container .intro__inner .intro__text {
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+.intro .container .intro__inner .intro__buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+.intro .container .intro__inner .btn {
+  border: none;
+  max-width: 200px;
+  position: relative;
+  padding-left: 67px;
+}
+.intro .container .intro__inner .btn.button__play {
+  background-color: #5328a1;
+  margin-right: 24px;
+}
+.intro .container .intro__inner .btn.button__play img {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 31px;
+  filter: invert(99%) sepia(4%) saturate(934%) hue-rotate(288deg) brightness(116%) contrast(100%);
+}
+.intro .container .intro__inner .btn.button__play:hover {
+  opacity: 0.7;
+}
+.intro .container .intro__inner .btn.button__heart {
+  background-color: #95390c;
+}
+.intro .container .intro__inner .btn.button__heart img {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 31px;
+  filter: invert(99%) sepia(4%) saturate(934%) hue-rotate(288deg) brightness(116%) contrast(100%);
+}
+.intro .container .intro__inner .btn.button__heart:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  .intro .container .intro__inner .intro__title {
+    line-height: 1;
+  }
+  .intro .container .intro__inner .intro__buttons {
+    flex-direction: column;
+  }
+  .intro .container .intro__inner .btn.button__play {
+    margin-bottom: 24px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
