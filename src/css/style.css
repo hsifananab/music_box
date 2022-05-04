@@ -246,6 +246,7 @@ a {
 #page-pricing.pricing .container .pricing__inner .pricing__item {
   border-radius: 1rem;
   padding: 24px;
+  padding-bottom: 0;
   margin-right: 50px;
 }
 #page-pricing.pricing .container .pricing__inner .pricing__item:last-child {
@@ -268,10 +269,11 @@ a {
 }
 #page-pricing.pricing .container .pricing__inner .pricing__item .card__button {
   margin-top: 40px;
-  margin-bottom: 64px;
 }
 #page-pricing.pricing .container .pricing__inner .pricing__item .card__text {
   font-size: 12.8px;
+  padding-bottom: 64px;
+  padding-top: 64px;
 }
 #page-pricing.pricing .container .pricing__inner .pricing__item.bg-free {
   background-image: url("../images/subscribe_1.png");
